@@ -4,7 +4,7 @@
 
 Because runing `docker build` in a container needs root priviledge of the host machine in order to use docker engine, most people will not recommand this method.
 
-Especially dockershim (dockerd) was replaced by CRI (containerd) in 2023，trying to use `docker build` in K8s pod is not straightforward anymore.
+Especially dockershim (dockerd) was replaced by CRI (containerd) in 2023, trying to use `docker build` in K8s pod is not straightforward anymore.
 
 ## Azure Pipelines Agent in AWS EKS
 
