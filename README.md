@@ -118,12 +118,12 @@ spec:
               secretKeyRef:
                 name: azdevops
                 key: AZP_POOL
-      - args:
-          - /usr/local/bin/dockerd-entrypoint.sh
+      - name: dind
+        image: registry.hub.docker.com/library/docker:dind
         command:
           - sh
-        image: registry.hub.docker.com/library/docker:dind
-        name: build
+        args:
+          - /usr/local/bin/dockerd-entrypoint.sh
         env:
           - name: DOCKER_TLS_CERTDIR
             value: ""
