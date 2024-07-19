@@ -8,7 +8,7 @@ Especially dockershim (dockerd) was replaced by CRI (containerd) in 2023，tryin
 
 ## Azure Pipelines Agent in AWS EKS
 
-Luckily AWS creates a symbolic link from dockershim.sock to /run/containerd/containerd.sock, enabling DIND to continue functioning seamlessly in the absence of dockerd.
+Luckily AWS creates a symbolic link from `dockershim.sock` to `/run/containerd/containerd.sock`, enabling DIND to continue functioning seamlessly in the absence of dockerd.
 
 This page will show a way to manage Azure Pipelines Agent in AWS EKS, but you need to understand below three references first.
 - [All you need to know about moving to containerd on Amazon EKS](https://aws.amazon.com/tw/blogs/containers/all-you-need-to-know-about-moving-to-containerd-on-amazon-eks/)
